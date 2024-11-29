@@ -11,5 +11,12 @@ export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  {
+    settings: {
+      react: {
+        version: "detect", // 自动检测 React 版本
+      },
+    },
+  },
   pluginPrettier,
 ];
